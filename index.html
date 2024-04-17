@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Rounded Corners Image Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js">
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+    function change_red(){
+        document.getElementById("Text").style.color="white";
+        document.getElementById("Text").style.backgroundColor="gray";
+       }
+</script>
+<style>
+.bcontent {
+margin-top: 10px;
+}
+img{
+    width: 400px;
+}
+.box{
+    display: flex;
+    gap: 230px;
+    margin: 30px 0px 0px 0px;
+    background-color: lightgray;
+    padding: 40px;
+}
+.box1{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+button{
+    color: lightslategray;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 8px;
+    background-color: lavender;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+button:hover{
+    color: rgb(90, 88, 84);
+    transition: 0.3s;
+}
+.paragrah{
+    font-size: 24px;
+    display: flex;
+    width: 1110px;
+    text-align: justify;
+    padding: 7px 5px 7px 5px;
+    line-height: 1.5;
+}
+h1{
+    border-bottom: 5px solid black;
+}
+</style>
+</head>
+<body>
+    <div class="container bcontent">
+        <div  class="box1">
+        <h1>Мариинский театр</h1>
+        <button onclick="change_red()"> Сменить тему </button>
+        </div>
+        <div class="box">
+        
+        <img src="http://cdn.otr-online.ru/files/programs_editions/2020-09/1020x574/medium_lori-0012987837-bigwww-1.jpg" class="rounded" alt="Мариинский театр снаружи" />
+        <img src="https://35photo.ru/profile/photos/46/233838_bg.jpg" class="rounded" alt="Мариинский театр внутри" />
+        </div><div class="paragrah" id="Text
+        ">
+        <p id="Text">Мариинский театр — один из ведущих музыкальных театров России и мира.
+<br>
+            Театр ведёт свою историю с 1783 года, когда по указу Екатерины II была учреждена труппа для представления драматических и оперных спектаклей в только что открытом на Театральной площади Большом Каменном театре.
+            <br>
+            В XIX веке Мариинский театр обрёл статус главной музыкальной сцены России: здесь прошли премьеры опер Даргомыжского, Мусоргского, Бородина, Чайковского, Римского-Корсакова.
+            <br>
+            В репертуаре театра более двухсот постановок, охватывающих два с половиной столетия истории музыки.</p>
+    </div>
+    </div>
+   
+</body>
+</html>
